@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonya's CSS/HTML Cheatsheet</title>
+    <link href="Resources\css\styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img src="Resources\images\Typography.png">
+    </header>
+
+    <div>
+        <h2>Terms to Know</h2>
+        <table>
+            <thead class="tablehead">
+                <tr>
+                    <th class="size">Term</th>
+                    <th>Meaning</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="turquoise">Typography</td>
+                    <td>The art of arranging text on a page</td>
+                </tr>
+                <tr>
+                    <td class="turquoise">Serif Font</td>
+                    <td>Fonts that contain extra details on the ends of each letter</td>
+                </tr>
+                <tr>
+                    <td class="turquoise">Sans-Serif Font</td>
+                    <td>Fonts that do not contain details on the ends of each letter</td>
+                </tr>
+                <tr>
+                    <td class="turquoise">Fallback Font</td>
+                    <td>A font that will be used if the font(s) declared before are not available on the user’s computer</td>
+                </tr>
+                <tr>
+                    <td class="turquoise">Font Stack</td>
+                    <td>A series of declared fonts to be used in the order specified</td>
+                </tr>
+                <tr>
+                    <td class="turquoise">Web Safe Fonts</td>
+                    <td>Fonts that will appear the same across all browsers and operating systems</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h2>Typography Properties</h2>
+        <table>
+            <thead class="tablehead">
+                <tr>
+                    <th>Property</th>
+                    <th>Accepted Values and/or Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="size"><span class="code">Font-weight</span></td>
+                    <td>Bold, normal, lighter, bolder, numerical value between 1 – 1000 <br>*A numerical value of 400 is equal to normal and 700 is equal to bold*</td>
+                </tr>
+                <tr>
+                    <td class="size"><span class="code">Font-style</span></td>
+                    <td>Normal (default), italic, oblique</td>
+                </tr>
+                <tr>
+                    <td class="size"><span class="code">Text-transform</span></td>
+                    <td>Length values such as px or em</td>
+                </tr>
+                <tr>
+                    <td class="size"><span class="code">Letter-spacing</span></td>
+                    <td>Length values such as px or em</td>
+                </tr>
+                <tr>
+                    <td class="size"><span class="code">Word-spacing</span></td>
+                    <td>Length values in units such as px or em</td>
+                </tr>
+                <tr>
+                    <td class="size"><span class="code">Font-family</span></td>
+                    <td>Any defined or linked font</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div>
+        <h2>Linking & Using Fonts</h2>
+        <table>
+            <thead class="tablehead">
+                <tr>
+                    <th class="size">Code</th>
+                    <th>How to Use</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="turquoise">HTML</td>
+                    <td>&lt;link href=”url” rel=”stylesheet”&gt;</td>
+                </tr>
+                <tr>
+                    <td class="turquoise">CSS</td>
+                    <td class="lowercase">@font-face {
+                        Font-family: ‘define name’;
+                        Src: url(‘file path or url’) format(‘file type’);
+                     }
+                     </td>
+                </tr>
+                <tr>
+                    <td class="turquoise">CSS</td>
+                    <td>Copy url of font and paste into browser, copy the /* latin */ @font-face code and paste into CSS file</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <p>Created by Tonya Potter July 2022</p>
+    </footer>
+
+</body>
+
+</html>
